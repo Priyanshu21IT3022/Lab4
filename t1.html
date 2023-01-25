@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Task T1</title>
+    <style>
+    #heading {
+    color: red;
+    }
+    .newHeading {
+    color: yellow;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">This is task T1</h1>
+    <button id="myButton">Click this button</button>
+    <script>
+      document.getElementById("myButton").onclick = function() {
+        document.body.style.backgroundColor = "blue";
+        document.getElementById("heading").innerHTML = "Welcome to the blue webpage";
+        document.getElementById("heading").classList.add("newHeading");
+      };
+    </script>
+  </body>
+</html>

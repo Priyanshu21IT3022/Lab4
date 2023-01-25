@@ -1,0 +1,22 @@
+<html>
+  <head>
+    <title>Task T3</title>
+    <style>
+    .blue-bg {
+    background-color: blue;
+    }
+    </style>
+  </head>
+  <body>
+    <h1 id="heading">Task T3</h1>
+    <button id="myButton">Click this button</button>
+  </body>
+  <script>
+    document.getElementById("myButton").onclick = function() {
+      alert("Background color is about to change.");
+      document.body.classList.add("blue-bg");
+      document.getElementById("heading").innerHTML = "Welcome to the blue webpage";
+      alert("Background color has been changed.");
+    };
+  </script>
+</html>

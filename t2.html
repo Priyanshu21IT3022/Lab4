@@ -1,0 +1,24 @@
+<html>
+  <head>
+    <title>Task T2</title>
+  </head>
+  <body>
+    <h1 id="heading">Task T2</h1>
+    <button id="myButton">Click this button</button>
+    <button id="myButton2">Click this button</button>
+    <script>
+      document.getElementById("myButton").onclick = function() {
+        document.body.style.backgroundColor = "lightgreen";
+        document.getElementById("heading").style.color = "red";
+        document.getElementById("heading").style.fontSize = "48pt";
+        document.getElementById("heading").innerHTML = "Welcome to the lightgreen webpage";
+      };
+      document.getElementById("myButton2").onclick = function() {
+        document.body.style.backgroundColor = "blue";
+        document.getElementById("heading").style.color = "black";
+        document.getElementById("heading").style.fontSize = "20pt";
+        document.getElementById("heading").innerHTML = "Welcome to my webpage";
+      };
+    </script>
+  </body>
+</html>

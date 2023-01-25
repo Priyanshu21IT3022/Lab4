@@ -1,0 +1,48 @@
+<html>
+  <head>
+    <title>Task T4</title>
+    <style>
+    #main-section {
+      background-color: rgb(63, 63, 122);
+      color: black;
+      font-size: 16pt;
+    }
+    .alt-content {
+      background-color: lightgray;
+      color: darkgray;
+      font-size: 20pt;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1>Task T4</h1>
+    </header>
+    <nav>
+      <ul>
+        <li>Home</li>
+        <li>About</li>
+        <li>Contact</li>
+      </ul>
+    </nav>
+    <main id="main-section">
+      <p>This is the initial content of the main section.</p>
+    </main>
+    <footer>
+      <p>Copyright © 2023 My Webpage</p>
+    </footer>
+    <button id="switch-button">Switch Content</button>
+    <script>
+      document.getElementById("switch-button").onclick = function() {
+        var mainSection = document.getElementById("main-section");
+        if (mainSection.innerHTML === "This is the initial content of the main section.") {
+          mainSection.innerHTML = "This is the alternate content of the main section.";
+          mainSection.classList.add("alt-content");
+        } else {
+          mainSection.innerHTML = "This is the initial content of the main section.";
+          mainSection.classList.remove("alt-content");
+        }
+      };
+    </script>
+  </body>
+</html>

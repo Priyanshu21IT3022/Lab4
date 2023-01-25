@@ -1,0 +1,44 @@
+<html>
+  <head>
+    <title>Task T5</title>
+    <style>
+    #heading {
+      color: black;
+    }
+    .red-heading {
+      color: red;
+    }
+    </style>
+  </head>
+  <body>
+    <header>
+      <h1 id="heading">Task T5</h1>
+    </header>
+    <main>
+      <p>Main section of the webpage</p>
+    </main>
+    <footer>
+      <p>Copyright © 2023 My Webpage</p>
+    </footer>
+    <button id="color-button1">Change color (Method 1)</button>
+    <button id="color-button2">Change color (Method 2)</button>
+    <button id="color-button3">Change color (Method 3)</button>
+    <script>
+      document.getElementById("color-button1").onclick = function() {
+        document.getElementById("heading").style.color = "blue";
+      };
+      document.getElementById("color-button2").onclick = function() {
+        var heading = document.getElementById("heading");
+        if (heading.classList.contains("red-heading")) {
+          heading.classList.remove("red-heading");
+        } else {
+          heading.classList.add("red-heading");
+        }
+      };
+      document.getElementById("color-button3").onclick = function() {
+        var heading = document.getElementById("heading");
+        heading.setAttribute("style", "color: green");
+      };
+    </script>
+  </body>
+</html>
